@@ -5,10 +5,12 @@ author: vicxxc
 tags:
 - Docker
 - Mysql
-date: 2020-10-01 13:56 +0800
+date: 2021-11-09 17:00:16
 ---
 
-执行
+Docker 快速启动mysql
+
+首先拉取镜像并启动
 ```
 # 下载镜像
 docker pull mysql:5.7.26
