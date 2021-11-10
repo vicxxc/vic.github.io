@@ -203,3 +203,23 @@ mysql> show databases;
 
 mysql 容器 的管理或者说，有状态应用的管理还得一个比较流弊的东西，这个项目是 大名鼎鼎的  kubernetes。
 
+
+#### **初始化SQL文件执行**
+
+第一种：命令行直接执行
+
+```
+# 如果需要知道db,则增加-D
+mysql -uroot -p -Dtest_db < /table_init.sql
+
+```
+
+第二种：进去mysql执行
+
+```
+# 进入mysql 
+mysql -uroot -p
+# 执行
+source /table_init.sql
+```
+
